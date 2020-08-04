@@ -1,0 +1,91 @@
+body {
+    // @include blend-color($background--color, $font--color);
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+.light {
+    @include rebase($base3, $base2, $base1, $base0, $base00, $base01, $base02, $base03)
+}
+
+.dark {
+    @include rebase($base03, $base02, $base01, $base00, $base0, $base1, $base2, $base3)
+}
+
+html * {
+    color-profile: sRGB;
+    rendering-intent: auto;
+}
+
+#joke {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 30px;
+
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+
+    .joke {
+        flex: 1 1 60%;
+        padding: 10px 20px;
+        border: 1px solid $blue;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+            0 2px 2px rgba(0, 0, 0, 0.12),
+            0 4px 4px rgba(0, 0, 0, 0.12),
+            0 8px 8px rgba(0, 0, 0, 0.12),
+            0 16px 16px rgba(0, 0, 0, 0.12);
+        @include font-decorator($font, $font-normal, $violet, 18)
+    }
+
+    .refresh-joke {
+        @include font-decorator($font, $font-normal, $base2, 20);
+        flex: 2 1 2.5rem;
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+        background-color: $base01;
+        transition: all 0.3s;
+        position: relative;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+            0 2px 2px rgba(0, 0, 0, 0.12),
+            0 4px 4px rgba(0, 0, 0, 0.12),
+            0 8px 8px rgba(0, 0, 0, 0.12),
+            0 16px 16px rgba(0, 0, 0, 0.12);
+
+    }
+
+}
+
+.title {
+    @include font-decorator($font, $font-normal, $base01, 22);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#app {
+    @include box-model((2rem 10.938rem 0 10.938rem), none, 10px, auto, auto);
+    @include blend-color($base2, $violet);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: [col-1-start] 10px [col-2-start] 1fr [col-3-start]20px;
+    grid-auto-rows: minmax(40px, 60px);
+
+
+}
+
+
+// de testat 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 0.625rem;
+}

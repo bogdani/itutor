@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,500&display=swap");
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+.light {
+  background-color: #fdf6e3;
+  color: #657b83;
+}
+
+html *,
+.light * {
+  color: #657b83;
+}
+
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6 {
+  color: #586e75;
+  border-color: #657b83;
+}
+
+html a,
+html a:active,
+html a:visited,
+.light a,
+.light a:active,
+.light a:visited {
+  color: #586e75;
+}
+
+.dark {
+  background-color: #002b36;
+  color: #839496;
+}
+
+.dark * {
+  color: #839496;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #93a1a1;
+  border-color: #839496;
+}
+
+.dark a,
+.dark a:active,
+.dark a:visited {
+  color: #93a1a1;
+}
+
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
+}
+
+#joke {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+#joke .joke {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  padding: 10px 20px;
+  border: 1px solid #268bd2;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+  font-family: "Jost";
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #6c71c4;
+}
+
+#joke .refresh-joke {
+  font-family: "Jost";
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #eee8d5;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 2.5rem;
+          flex: 2 1 2.5rem;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #586e75;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-family: "Jost";
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: #586e75;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#app {
+  margin: 2rem 10.938rem 0 10.938rem;
+  border: none;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  background-color: #eee8d5;
+  color: #6c71c4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: [col-1-start] 10px [col-2-start] 1fr [col-3-start] 20px;
+      grid-template-columns: [col-1-start] 10px [col-2-start] 1fr [col-3-start] 20px;
+  grid-auto-rows: minmax(40px, 60px);
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ([col-start] 1fr)[12];
+      grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 0.625rem;
+}
+/*# sourceMappingURL=style.css.map */
