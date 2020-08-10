@@ -161,7 +161,7 @@ html * {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: ([col-start] 1fr)[12];
+
       grid-template-columns: repeat(12, [col-start] 1fr);
   grid-gap: 0.625rem;
 }
