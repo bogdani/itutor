@@ -63,12 +63,12 @@ function testArr(str){
       // console.log(test);
       return test;
     } else {
-      // console.log(elIndex, element);
+      console.log(elIndex, element);
     }
     
   });
   
     
 } 
-testArr("KABOM");
+testArr("test");
 console.log(test);
