@@ -54,3 +54,7 @@
         color: $accent
     }
 }
+
+@mixin fluidFont($small:16, $big:26){
+    font-size: calc(($small+ 0px) + ($big - $small) * (( 100vw - 480px ) / ( 1920 - 480 )));
+}
